@@ -150,10 +150,37 @@
 
 let grades1 = ['A+', 'A', 'FAIL']
 
-let newgrades = grades1.filter((element) => {
-    console.log(element) 
-    if (element) != 'FAIL'
-    return true;
-});
+// let newgrades = grades1.filter(element => element !== 'FAIL');
+let newGrades1 = grades1.filter((element) => {
+    if (element !== 'FAIL') {
+        return true;
+    }
+})
 
-console.log(newgrades)
+console.log(newGrades1)
+
+
+
+let grades2 = ['FAIL', 'FAIL', 'B']
+
+// let newgrades2 = grades2.filter(element => element !== 'FAIL');
+
+let newGrades2 = grades2.filter((element) => {
+if (element !== 'FAIL') {
+    return true;
+}
+})
+
+console.log(newGrades2)
+
+let grades3 = ['FAIL']
+
+// let newGrades3 = grades3.filter ((element) => element !== 'FAIL')
+let newGrades3 = grades3.filter((element) => {
+    if (element !== 'FAIL') {
+        return true;
+    }
+}
+)
+
+console.log(newGrades3)
